@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiztopia🔍</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/favicon(1).svg">
+  </head>
+  <body>
+    <main>
+      <div class="homepage">
+        <h4 class="app-name"><span>Quiztopia!🔍</span> <br>Step Into the World of Quizzes!</h4>
+        <hr>
+        <div class="game-config">
+          <select name="level" id="level" class="level-select">
+            <option value="0">Select Level</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+  
+          <select name="totalQuestions" id="totalQuestions" class="ques-select">
+            <option value="0">Total Questions</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+            <option value="30">30</option>
+          </select>
+        </div>
+
+        <button class="playBtn">
+            <h2>Start Quiz</h2>
+          <img src="assets/play-button.svg" alt="play" class="play-img">
+        </button>
+      </div>
+
+      <div class="quiz-app">
+        <div class="quiz-header">
+          <div class="header-content">
+            <h1 class="title">Quiztopia!</h1>
+            <div class="timer">
+              Time-Left  <span class="timer-value"></span>
+            </div>
+          </div>
+          <div class="quiz-progress"></div>
+        </div>
+
+        <div class="question-container">
+          <h2 class="question"> <span class="currentQ"></span> </h2>
+          <div class="quiz-options">
+            <!-- here all the option element will be added dynamically -->
+          </div>
+        </div>
+
+        <hr />
+        <div class="questions-remaining">
+          <span>Question </span><span class="currentQ"></span>
+          <span>of </span><span class="totalQ"></span>
+        </div>
+      </div>
+
+      <div class="question-answer-container">
+        <div class="summary-header">
+          <h1 class="title">Quiztopia!</h1>
+          <div style="display: flex; gap: 6px;">
+            <div class="reloadContainer">
+              <button class="reloadBtn">Restart <img src="assets/restart-circle-svgrepo-com.svg" alt="restart" class="restart"> </button>
+            </div>
+            <span class="score timer"></span>
+          </div>
+        </div>
+
+        <div class="inner-container">
+
+        </div>
+        <!-- here ques along with there correct answer will be shown -->
+      </div>
+    </main>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
